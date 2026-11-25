@@ -1,67 +1,67 @@
 {
- "git_commit": "2aec57e5c2176e74beadd98879d6da64399b80c8",
- "git_tag": "v26.11-rc11",
+ "git_commit": "2829f9ec782c4138bc6ec1a258535eb9c58de141",
+ "git_tag": "v26.11-rc13",
  "numbers": {
-  "drugs": 1799,
-  "drugs_with_record_rows": 2195,
+  "drugs": 1784,
+  "drugs_with_record_rows": 2182,
   "models": {
    "by_kind": {
-    "pd": 769,
+    "pd": 784,
     "pgx": 9,
-    "pk": 2136,
-    "quarantined": 270
+    "pk": 2163,
+    "quarantined": 278
    },
-   "drugs_with_models": 867,
-   "generated_modelica": 3184
+   "drugs_with_models": 875,
+   "generated_modelica": 3234
   },
-  "papers": 5909,
+  "papers": 5493,
   "parameters": {
-   "counted": 26744,
-   "counted_by_website": 26744,
-   "rows": 40508
+   "counted": 26144,
+   "counted_by_website": 26144,
+   "rows": 39757
   },
   "pd": {
-   "counted": 6273,
+   "counted": 5286,
    "other": 0,
-   "rejected": 1294
+   "rejected": 976
   },
   "pgx": {
-   "counted": 568,
-   "other": 2760,
+   "counted": 569,
+   "other": 2790,
    "rejected": 15
   },
   "pk": {
-   "counted": 3515,
-   "other": 3,
-   "rejected": 3136
+   "counted": 3608,
+   "other": 14,
+   "rejected": 3219
   },
   "record_rows": {
-   "pd": 7567,
-   "pgx": 3344,
-   "pk": 6654
+   "pd": 6262,
+   "pgx": 3375,
+   "pk": 6841
   },
   "record_rows_by_kind": {
    "pd": {
-    "counted": 6273,
+    "counted": 5286,
     "other": 0,
-    "rejected": 1294,
+    "rejected": 976,
     "unlisted": 0
    },
    "pgx": {
-    "counted": 569,
-    "other": 2760,
+    "counted": 570,
+    "other": 2790,
     "rejected": 15,
     "unlisted": 0
    },
    "pk": {
-    "counted": 3515,
-    "other": 0,
-    "rejected": 3136,
+    "counted": 3608,
+    "other": 11,
+    "rejected": 3219,
     "unlisted": 3
    }
   },
   "scope": "drugs"
  },
- "snapshot_date": "2026-11-22",
+ "snapshot_date": "2026-11-25",
  "version": "26.11"
 }

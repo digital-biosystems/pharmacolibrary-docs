@@ -12,19 +12,19 @@ The data are published on Zenodo, release 26.11.
 
 The numbers the Zenodo record states, counted by the same code as the website's (see [About](#/pipeline) for the definitions and the live numbers). The dataset holds the drugs only; the toxins and the Modelica library are not in it.
 
-| Research dataset 26.11 (snapshot 2026-11-22, drugs only) | Count |
+| Research dataset 26.11 (snapshot 2026-11-25, drugs only) | Count |
 |---|---:|
-| Drugs with a counted record | 1,799 |
-| popPK records | 3,515 |
-| PD records | 6,273 |
-| PGx records | 568 |
-| Papers behind them (distinct DOI) | 5,909 |
-| Parameter values of these records | 26,744 |
-| popPK records rejected | 3,136 |
-| PD records rejected | 1,294 |
+| Drugs with a counted record | 1,784 |
+| popPK records | 3,608 |
+| PD records | 5,286 |
+| PGx records | 569 |
+| Papers behind them (distinct DOI) | 5,493 |
+| Parameter values of these records | 26,144 |
+| popPK records rejected | 3,219 |
+| PD records rejected | 976 |
 | PGx records rejected | 15 |
-| Generated models (Modelica) | 3,184 |
-| Drugs with a generated model | 867 |
+| Generated models (Modelica) | 3,234 |
+| Drugs with a generated model | 875 |
 
 Cite the research dataset. The two source corpora are its supplements: each file keeps the licence of its paper, listed in `ATTRIBUTIONS.csv` and `MANIFEST.csv`. The non-commercial corpus is for non-commercial use only.
 

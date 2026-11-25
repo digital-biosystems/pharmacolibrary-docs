@@ -1264,66 +1264,6 @@
    }
   }
  },
- "drug_acamprosate": {
-  "atc_codes": [
-   "N07BB03"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_acamprosate",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "acamprosate",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 4,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "acamprosate",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    3,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 3
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_acarbose": {
   "atc_codes": [
    "A10BD17",
@@ -9086,66 +9026,6 @@
    }
   }
  },
- "drug_amifostine": {
-  "atc_codes": [
-   "V03AF05"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_amifostine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "amifostine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 2,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "amifostine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_amikacin": {
   "atc_codes": [
    "D06AX12",
@@ -13738,66 +13618,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_aniracetam": {
-  "atc_codes": [
-   "N06BX11"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_aniracetam",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "aniracetam",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 5,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "aniracetam",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    5,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 5
-   },
    "pgx": {},
    "pk": {}
   }
@@ -20831,72 +20651,6 @@
    "pk": {}
   }
  },
- "drug_bacitracin": {
-  "atc_codes": [
-   "D06AX05",
-   "J01XX10",
-   "R02AB04",
-   "S01AA32"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_bacitracin",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "bacitracin",
-  "needs_review": 0,
-  "papers": [
-   "10.1007/s00436-011-2717-5"
-  ],
-  "parameters": {
-   "all": 6,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "bacitracin",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2,
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_baclofen": {
   "atc_codes": [
    "M03BX01"
@@ -21503,66 +21257,6 @@
    "pk": {
     "rejected": 1
    }
-  }
- },
- "drug_barbital": {
-  "atc_codes": [
-   "N05CA04"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_barbital",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "barbital",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 2,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "barbital",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_baricitinib": {
@@ -24851,68 +24545,6 @@
    "pk": {}
   }
  },
- "drug_benzyl_benzoate": {
-  "atc_codes": [
-   "P03AX01"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_benzyl_benzoate",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "benzyl benzoate",
-  "needs_review": 0,
-  "papers": [
-   "10.1055/s-0029-1243125"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "benzyl_benzoate",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_benzylpenicillin": {
   "atc_codes": [
    "J01CE01",
@@ -25578,69 +25210,6 @@
     "needs_review": 1,
     "rejected": 1
    }
-  }
- },
- "drug_betahistine": {
-  "atc_codes": [
-   "N07CA01"
-  ],
-  "best_status": "needs_review",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_betahistine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "betahistine",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/0014-2999(85)90115-3"
-  ],
-  "parameters": {
-   "all": 8,
-   "counted": 4
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "betahistine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "needs_review": 2,
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_betaine": {
@@ -30326,68 +29895,6 @@
    "pk": {}
   }
  },
- "drug_brincidofovir": {
-  "atc_codes": [
-   "J05AB17"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_brincidofovir",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "brincidofovir",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.antiviral.2018.12.003"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "brincidofovir",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_brinzolamide": {
   "atc_codes": [
    "S01EC04"
@@ -30594,66 +30101,6 @@
     "needs_review": 4,
     "rejected": 3
    }
-  }
- },
- "drug_brivudine": {
-  "atc_codes": [
-   "J05AB15"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_brivudine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "brivudine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "brivudine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_brodalumab": {
@@ -30951,67 +30398,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_bromelains": {
-  "atc_codes": [
-   "D03BA03",
-   "M09AB03"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_bromelains",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "bromelains",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "bromelains",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
    "pgx": {},
    "pk": {}
   }
@@ -33914,69 +33300,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_calcipotriol": {
-  "atc_codes": [
-   "D05AX02"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_calcipotriol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "calcipotriol",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.ejphar.2007.06.023"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "calcipotriol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2,
-    "rejected": 1
-   },
    "pgx": {},
    "pk": {}
   }
@@ -44879,67 +44202,6 @@
    "pk": {}
   }
  },
- "drug_ceritinib": {
-  "atc_codes": [
-   "L01ED02",
-   "L01XE"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_ceritinib",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "ceritinib",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "ceritinib",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_cerivastatin": {
   "atc_codes": [
    "C10AA06"
@@ -46691,67 +45953,6 @@
    }
   }
  },
- "drug_chloropyramine": {
-  "atc_codes": [
-   "D04AA09",
-   "R06AC03"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_chloropyramine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "chloropyramine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "chloropyramine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_chloroquine": {
   "atc_codes": [
    "P01BA01",
@@ -47670,66 +46871,6 @@
    "pk": {
     "rejected": 1
    }
-  }
- },
- "drug_cholinesterase": {
-  "atc_codes": [
-   "V03AB29"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_cholinesterase",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "cholinesterase",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "cholinesterase",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_chorionic_gonadotrophin": {
@@ -51007,9 +50148,9 @@
    "R03CC13",
    "R03CC63"
   ],
-  "best_status": "not_simulated",
+  "best_status": null,
   "counts": {
-   "pd": 6,
+   "pd": 0,
    "pgx": 0,
    "pk": 0
   },
@@ -51026,15 +50167,10 @@
   },
   "name": "clenbuterol",
   "needs_review": 0,
-  "papers": [
-   "10.1016/j.fct.2019.110973",
-   "10.1016/s0300-483x(03)00059-3",
-   "10.1046/j.1365-2885.1998.00156.x",
-   "10.1111/j.1476-5381.1993.tb13929.x"
-  ],
+  "papers": [],
   "parameters": {
-   "all": 11,
-   "counted": 6
+   "all": 0,
+   "counted": 0
   },
   "records": 0,
   "rejected": 0,
@@ -51045,8 +50181,8 @@
   "stale": 0,
   "tally": {
    "pd": [
-    6,
-    6,
+    0,
+    0,
     0
    ],
    "pgx": [
@@ -51061,10 +50197,7 @@
    ]
   },
   "verdicts": {
-   "pd": {
-    "extracted": 6,
-    "rejected": 6
-   },
+   "pd": {},
    "pgx": {},
    "pk": {}
   }
@@ -51252,66 +50385,6 @@
     "rejected": 2,
     "simulated": 1
    }
-  }
- },
- "drug_clevudine": {
-  "atc_codes": [
-   "J05AF12"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_clevudine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "clevudine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "clevudine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_clindamycin": {
@@ -53370,68 +52443,6 @@
   "verdicts": {
    "pd": {
     "extracted": 2
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_clotiazepam": {
-  "atc_codes": [
-   "N05BA21"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_clotiazepam",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "clotiazepam",
-  "needs_review": 0,
-  "papers": [
-   "10.1038/bjp.2008.271"
-  ],
-  "parameters": {
-   "all": 3,
-   "counted": 3
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "clotiazepam",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
    },
    "pgx": {},
    "pk": {}
@@ -62286,70 +61297,6 @@
    "pk": {
     "rejected": 1
    }
-  }
- },
- "drug_demeclocycline": {
-  "atc_codes": [
-   "D06AA01",
-   "J01AA01"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_demeclocycline",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "demeclocycline",
-  "needs_review": 0,
-  "papers": [
-   "10.1111/j.1600-0765.1999.tb02256.x"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "demeclocycline",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1,
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_demecolcine": {
@@ -84518,68 +83465,6 @@
    }
   }
  },
- "drug_etizolam": {
-  "atc_codes": [
-   "N05BA19"
-  ],
-  "best_status": "needs_review",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_etizolam",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "etizolam",
-  "needs_review": 0,
-  "papers": [
-   "10.1055/s-0031-1300366"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "etizolam",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "needs_review": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_etodolac": {
   "atc_codes": [
    "M01AB08"
@@ -86302,68 +85187,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_faldaprevir": {
-  "atc_codes": [
-   "J05AP04"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_faldaprevir",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "faldaprevir",
-  "needs_review": 0,
-  "papers": [
-   "10.1128/aac.02680-20"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "faldaprevir",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2
-   },
    "pgx": {},
    "pk": {}
   }
@@ -91334,70 +90157,6 @@
    }
   }
  },
- "drug_flubendazole": {
-  "atc_codes": [
-   "P02CA05"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_flubendazole",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "flubendazole",
-  "needs_review": 0,
-  "papers": [
-   "10.1007/s11259-022-09958-9",
-   "10.1111/jfd.14102"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "flubendazole",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1,
-    "needs_review": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_fluciclovine_18f": {
   "atc_codes": [
    "V09IX12"
@@ -94175,70 +92934,6 @@
     "rejected": 2,
     "simulated": 1
    }
-  }
- },
- "drug_flupentixol": {
-  "atc_codes": [
-   "N05AF01"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 6,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_flupentixol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "flupentixol",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/0014-5793(95)00224-w",
-   "10.1038/s41401-020-00556-6",
-   "drug_flupentixol/Hensler_1987"
-  ],
-  "parameters": {
-   "all": 8,
-   "counted": 8
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "flupentixol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    6,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 6
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_fluphenazine": {
@@ -98687,68 +97382,6 @@
     "needs_review": 1,
     "rejected": 1
    }
-  }
- },
- "drug_gadoteridol": {
-  "atc_codes": [
-   "V08CA04"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_gadoteridol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "gadoteridol",
-  "needs_review": 0,
-  "papers": [
-   "10.1148/radiology.180.2.2068317"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "gadoteridol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_gadoversetamide": {
@@ -104413,68 +103046,6 @@
    }
   }
  },
- "drug_grass_pollen": {
-  "atc_codes": [
-   "V01AA02"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_grass_pollen",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "grass pollen",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.waojou.2019.100075"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "grass_pollen",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_grazoprevir": {
   "atc_codes": [
    "J05AP11",
@@ -106530,66 +105101,6 @@
    "pk": {}
   }
  },
- "drug_hexylresorcinol": {
-  "atc_codes": [
-   "R02AA12"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_hexylresorcinol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "hexylresorcinol",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 2,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "hexylresorcinol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_hippocastani_semen": {
   "atc_codes": [
    "C05CX03"
@@ -106717,68 +105228,6 @@
    "pgx": {
     "evidence_only": 3
    },
-   "pk": {}
-  }
- },
- "drug_histamine_phosphate": {
-  "atc_codes": [
-   "V04CG03"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_histamine_phosphate",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "histamine phosphate",
-  "needs_review": 0,
-  "papers": [
-   "drug_histamine_phosphate/Zambetti_1999"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "histamine_phosphate",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
    "pk": {}
   }
  },
@@ -116120,68 +114569,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_ioversol": {
-  "atc_codes": [
-   "V08AB07"
-  ],
-  "best_status": "needs_review",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_ioversol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "ioversol",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.bbrc.2023.09.019"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "ioversol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "needs_review": 1
-   },
    "pgx": {},
    "pk": {}
   }
@@ -126570,66 +124957,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_lifitegrast": {
-  "atc_codes": [
-   "S01XA25"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_lifitegrast",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "lifitegrast",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "lifitegrast",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
    "pgx": {},
    "pk": {}
   }
@@ -142424,68 +140751,6 @@
    }
   }
  },
- "drug_metyrapone": {
-  "atc_codes": [
-   "V04CD01"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_metyrapone",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "metyrapone",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/0006-2952(85)90768-3"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "metyrapone",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_mexiletine": {
   "atc_codes": [
    "C01BB02"
@@ -148860,68 +147125,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_mosapramine": {
-  "atc_codes": [
-   "N05AX10"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_mosapramine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "mosapramine",
-  "needs_review": 0,
-  "papers": [
-   "10.1254/jjp.69.399"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "mosapramine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2
-   },
    "pgx": {},
    "pk": {}
   }
@@ -162818,66 +161021,6 @@
    "pk": {}
   }
  },
- "drug_oxamniquine": {
-  "atc_codes": [
-   "P02BA02"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_oxamniquine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "oxamniquine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "oxamniquine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_oxandrolone": {
   "atc_codes": [
    "A14AA08"
@@ -167456,68 +165599,6 @@
    "pk": {
     "rejected": 1
    }
-  }
- },
- "drug_patiromer": {
-  "atc_codes": [
-   "V03AE09"
-  ],
-  "best_status": "needs_review",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_patiromer",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "patiromer",
-  "needs_review": 0,
-  "papers": [
-   "10.1177/00185787211037552"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "patiromer",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "needs_review": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_patisiran": {
@@ -172831,68 +170912,6 @@
    "pd": {
     "extracted": 3,
     "needs_review": 9
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_phenibut": {
-  "atc_codes": [
-   "N06BX22"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_phenibut",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "phenibut",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.ejphar.2020.173437"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "phenibut",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
    },
    "pgx": {},
    "pk": {}
@@ -179955,69 +177974,6 @@
    "pk": {}
   }
  },
- "drug_pramipexole": {
-  "atc_codes": [
-   "N04BC05"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_pramipexole",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "pramipexole",
-  "needs_review": 0,
-  "papers": [
-   "10.1002/jcph.1426"
-  ],
-  "parameters": {
-   "all": 4,
-   "counted": 3
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "pramipexole",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2,
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_pramlintide": {
   "atc_codes": [
    "A10BX05"
@@ -186849,66 +184805,6 @@
    }
   }
  },
- "drug_quinisocaine": {
-  "atc_codes": [
-   "D04AB05"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_quinisocaine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "quinisocaine",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "quinisocaine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_quinupramine": {
   "atc_codes": [
    "N06AA23"
@@ -187244,66 +185140,6 @@
    "pk": {
     "rejected": 2
    }
-  }
- },
- "drug_rabies_serum": {
-  "atc_codes": [
-   "J06AA06"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_rabies_serum",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "rabies serum",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "rabies_serum",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_racecadotril": {
@@ -188352,66 +186188,6 @@
   },
   "verdicts": {
    "pd": {},
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_rasburicase": {
-  "atc_codes": [
-   "V03AF07"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_rasburicase",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "rasburicase",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 4,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "rasburicase",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
-   },
    "pgx": {},
    "pk": {}
   }
@@ -217838,68 +215614,6 @@
    "pk": {}
   }
  },
- "drug_tetrabenazine": {
-  "atc_codes": [
-   "N07XX06"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_tetrabenazine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "tetrabenazine",
-  "needs_review": 0,
-  "papers": [
-   "10.1021/bi00430a040"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "tetrabenazine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_tetracaine": {
   "atc_codes": [
    "C05AD02",
@@ -222197,66 +219911,6 @@
   "verdicts": {
    "pd": {
     "extracted": 4
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_tipranavir": {
-  "atc_codes": [
-   "J05AE09"
-  ],
-  "best_status": "rejected",
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_tipranavir",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "tipranavir",
-  "needs_review": 0,
-  "papers": [],
-  "parameters": {
-   "all": 1,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "tipranavir",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    0,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "rejected": 1
    },
    "pgx": {},
    "pk": {}
@@ -227923,131 +225577,6 @@
    "pk": {}
   }
  },
- "drug_trifluperidol": {
-  "atc_codes": [
-   "N05AD02"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_trifluperidol",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "trifluperidol",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/0014-2999(83)90452-1"
-  ],
-  "parameters": {
-   "all": 1,
-   "counted": 1
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "trifluperidol",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    4,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1,
-    "rejected": 4
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
- "drug_triflupromazine": {
-  "atc_codes": [
-   "N05AA05"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_triflupromazine",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "triflupromazine",
-  "needs_review": 0,
-  "papers": [
-   "10.1016/j.tox.2015.02.004"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "triflupromazine",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_trifluridine": {
   "atc_codes": [
    "S01AD02"
@@ -230736,70 +228265,6 @@
    "pk": {}
   }
  },
- "drug_tyrothricin": {
-  "atc_codes": [
-   "D06AX08",
-   "R02AB02",
-   "S01AA05"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_tyrothricin",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "tyrothricin",
-  "needs_review": 0,
-  "papers": [
-   "10.1055/s-0031-1300595"
-  ],
-  "parameters": {
-   "all": 0,
-   "counted": 0
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "tyrothricin",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    1,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 1
-   },
-   "pgx": {},
-   "pk": {}
-  }
- },
  "drug_ubidecarenone": {
   "atc_codes": [
    "C01EB09"
@@ -232501,69 +229966,6 @@
    "pk": {
     "needs_review": 1
    }
-  }
- },
- "drug_valerianae_radix": {
-  "atc_codes": [
-   "N05CM09"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 2,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_valerianae_radix",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "Valerianae radix",
-  "needs_review": 0,
-  "papers": [
-   "10.1023/a:1022576405534"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "valerianae_radix",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    2,
-    1,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2,
-    "rejected": 1
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_valganciclovir": {
@@ -236344,69 +233746,6 @@
    "pk": {
     "needs_review": 1
    }
-  }
- },
- "drug_virginiamycin": {
-  "atc_codes": [
-   "D06AX10"
-  ],
-  "best_status": "not_simulated",
-  "counts": {
-   "pd": 4,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_virginiamycin",
-  "extracted": 0,
-  "last_change": null,
-  "models": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0,
-   "quarantined": 0
-  },
-  "name": "virginiamycin",
-  "needs_review": 0,
-  "papers": [
-   "10.1093/jas/sky121"
-  ],
-  "parameters": {
-   "all": 2,
-   "counted": 2
-  },
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "replication": {},
-  "simulatable": 0,
-  "slug": "virginiamycin",
-  "stale": 0,
-  "tally": {
-   "pd": [
-    4,
-    0,
-    0
-   ],
-   "pgx": [
-    0,
-    0,
-    0
-   ],
-   "pk": [
-    0,
-    0,
-    0
-   ]
-  },
-  "verdicts": {
-   "pd": {
-    "extracted": 2,
-    "needs_review": 2
-   },
-   "pgx": {},
-   "pk": {}
   }
  },
  "drug_vismodegib": {
