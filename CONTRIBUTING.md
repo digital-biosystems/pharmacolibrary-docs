@@ -92,12 +92,12 @@ phenotype switching in the browser.
 ## Shared documentation text
 
 Edit `README-template.md`, `query.md`, and `sites.md` here; shared generated legends,
-captions, and explanatory text live in `pharmacolibrary-dev/pk_knowledge_scripts/docs/`.
+captions, and explanatory text live in `pharmacolibrary-dev/pharmacolib/docs/`.
 Use a text-only refresh to update existing pages without rerunning extraction or exports:
 
 ```bash
 # From pharmacolibrary-dev; omit --write to preview:
-python -m pk_knowledge_scripts.docs.refresh_text --docs-dir ../pharmacolibrary-docs --write
+python -m pharmacolib.docs.refresh_text --docs-dir ../pharmacolibrary-docs --write
 ```
 
 The refresh preserves source-derived About text, scientific tables, code blocks,
@@ -109,7 +109,7 @@ even when the external KB is disconnected:
 
 ```bash
 # From pharmacolibrary-dev; omit --write to preview:
-python -m pk_knowledge_scripts.docs.diagrams --source ddd --docs-dir ../pharmacolibrary-docs --write
+python -m pharmacolib.docs.diagrams --source ddd --docs-dir ../pharmacolibrary-docs --write
 ```
 
 This updates only `ddd` SVG files and Models-tab figures, not source records or databases.
@@ -173,13 +173,13 @@ there is no second frontend scaffold in `pharmacolibrary-dev/docs`.
 
 ```bash
 # From pharmacolibrary-dev; target must not already exist:
-python -m pk_knowledge_scripts.docs.init_site /path/to/site \
+python -m pharmacolib.docs.init_site /path/to/site \
   --source ../pharmacolibrary-docs --ref <site-commit-or-tag>
-python -m pk_knowledge_scripts.docs.build clopidogrel --docs-dir /path/to/site
+python -m pharmacolib.docs.build clopidogrel --docs-dir /path/to/site
 ```
 
 Use `--docs-dir` or `PHARMACOLIB_DOCS_DIR` to select the generator output. Template WASM
-compilation is an explicit `python -m pk_knowledge_scripts.export.fmu --wasm` operation
+compilation is an explicit `python -m pharmacolib.export.fmu --wasm` operation
 targeting the same site. Ordinary content builds never replace site CSS/JS or components.
 
 After checking the complete site, `./sync-to-pages.sh` mirrors it into

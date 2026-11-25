@@ -91,7 +91,7 @@ and they are not advice for dosing or prescribing.
     <h3>Evidence tiers</h3>
     <p>Tiers: mapped DrugBank actor (3), paper-derived PGx gene (2), text-derived site (1). These categories do not establish clinical relevance: potency and fraction metabolised are unavailable, and tissue mappings describe the protein rather than a study-specific observation. Unmapped actors remain in tables but are excluded from tissue maps.</p>
     <h3>Comparison links</h3>
-    <p>Example: <code>#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide</code>. Source logic: <code>pk_knowledge_scripts.adme_sites</code>; database export: <code>pk_knowledge_scripts.export.adme_sqlite</code>.</p>
+    <p>Example: <code>#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide</code>. Source logic: <code>pharmacolib.adme_sites</code>; database export: <code>pharmacolib.export.adme_sqlite</code>.</p>
     </div>
     </div>
   </div>

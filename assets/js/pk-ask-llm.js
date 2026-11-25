@@ -15,7 +15,7 @@
   'use strict';
   var CDN = 'https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.84/+esm';
   // f16 builds where the GPU has shader-f16, else the f32 build of the same weights. The
-  // choice is pk_knowledge_scripts.docs.query_eval's: on the 50 golden questions keywords alone
+  // choice is pharmacolib.docs.query_eval's: on the 50 golden questions keywords alone
   // pass 36, Qwen3.5 0.8B 43, 4B 47, 9B 50 (2B, 42, adds nothing over 0.8B). gb is the
   // download (the MLC shards on Hugging Face), vram the GPU memory WebLLM asks for.
   var MODELS = [

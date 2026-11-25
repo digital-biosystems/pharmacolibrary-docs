@@ -25,12 +25,12 @@ drug page's header with a link straight to `/#/drugs/drug_clopidogrel/`.
 
 ## Work items
 
-**A. Export: index the aliases** (`pk_knowledge_scripts/export/sqlite.py:_build_search`)
+**A. Export: index the aliases** (`pharmacolib/export/sqlite.py:_build_search`)
 - One pass over `drug_alias` joined to `drug`: rows of kind `brand`/`synonym`,
   `label = alias`, `detail = '<alias> — generic: <name>'` (e.g. "plavix — generic:
   clopidogrel"), `href = 'drugs/<slug>/'`. Deduped by the pass; the `_ALIAS_STOP`/
   `_common_words` guards stay where they are (they guard the ask parser, not the index).
-- Rebuild with `python -m pk_knowledge_scripts.export.sqlite …` in the **data cycle**
+- Rebuild with `python -m pharmacolib.export.sqlite …` in the **data cycle**
   (new content-hash file name → `data/latest.json` republished) — belongs in the same
   post-runs refresh already pending for issue 1's data, not a build of its own.
 - One regression test pinned to the export: `_build_search` emits `('brand', 'plavix', …,

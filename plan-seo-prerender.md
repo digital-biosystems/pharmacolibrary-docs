@@ -35,7 +35,7 @@ one real 200-OK HTML file per route with the FULL rendered content.
    generation.
 
 **V1 — the pre-renderer (drug cards + ATC + data/about/query/home):**
-New generator step `docs/prerender.py` (`python -m pk_knowledge_scripts.docs.prerender`,
+New generator step `docs/prerender.py` (`python -m pharmacolib.docs.prerender`,
 run after the content build / inside the aggregate phase). For each route it writes
 `<route>/index.html`:
 - `<head>`: the five theme CSS `<link>`s (no inline styles — check-site's rule), per-page

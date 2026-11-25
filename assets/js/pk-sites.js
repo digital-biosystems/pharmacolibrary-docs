@@ -4,7 +4,7 @@
  * fetched by the docsify plugin only when a page carries #pk-sites.
  *
  * Exposes window.pkSites = { search(db, term), resolve(db, slugs), compute(db, slugs, opts),
- * render(root, model, opts) }. compute() is a port of pk_knowledge_scripts.adme_sites
+ * render(root, model, opts) }. compute() is a port of pharmacolib.adme_sites
  * (tissue_matrix / shared_actors / affected_tissues); render() draws the three views. */
 (function () {
   'use strict';
@@ -113,7 +113,7 @@
 
   // ── patient pharmacogenes ───────────────────────────────────────────────────────────────
   // A phenotype belongs to the patient, so it applies to every drug of the set. Mirrors
-  // pk_knowledge_scripts.pgx_phenotypes: one activity axis (UM +2 … PM −2); the drug's
+  // pharmacolib.pgx_phenotypes: one activity axis (UM +2 … PM −2); the drug's
   // relation to the gene decides the direction — the gene FORMS its active metabolite (a
   // prodrug; from the KB's PGx records) or CLEARS it (a paper's metabolism/transport record,
   // else a DrugBank 'substrate' of a metabolizer/transporter gene). A target or safety gene

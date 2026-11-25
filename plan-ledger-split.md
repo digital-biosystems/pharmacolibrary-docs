@@ -22,7 +22,7 @@ custom elements), so **no work in `~/Projects/dbs-components-dev` is required**.
 
 | Repo | Owns | Role in this plan |
 |---|---|---|
-| `~/Projects/pharmacolibrary-dev` | `pk_knowledge_scripts/docs/ledger.py`, `build_set.py`, `nav.py` | The generators: section-split rendering, shard writes, sidebar links |
+| `~/Projects/pharmacolibrary-dev` | `pharmacolib/docs/ledger.py`, `build_set.py`, `nav.py` | The generators: section-split rendering, shard writes, sidebar links |
 | `~/Projects/pharmacolibrary-docs` | templates (`README-template.md`), scaffold (`index.html`, `pipeline.md`, `CONTRIBUTING.md`), `assets/css/ledger.css` | Redirect for old deep links, updated cross-references, small CSS |
 | `~/Projects/dbs-components-dev` | `dbs-*` elements | Unaffected |
 
@@ -116,7 +116,7 @@ panels are rendered by `_panel_section`, run groups by `_group_section`, wanted 
 1. Extend `scripts/check-site.py` (docs repo) with two assertions: no generated page
    exceeds **2 MB**; every `#/`-link target on the ledger/review shard pages resolves
    (reuse whatever link-crawling `check-site.py` already does for ATC pages).
-2. Run the standard build (`python -m pk_knowledge_scripts.docs.build_set …` per the
+2. Run the standard build (`python -m pharmacolib.docs.build_set …` per the
    docs CLAUDE.md) and confirm: generated page count ≈ +418, `ledger.md` and
    `review.md` dropped to stubs (byte sizes in the build log), sidebar shows the new
    links, `sync-to-pages.sh` output unchanged in mechanics.

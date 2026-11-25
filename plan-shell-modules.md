@@ -174,7 +174,7 @@ fails any shell that inlines script or style again.
 - Any change in `dbs-components-dev` (verified none needed) and any component release
   bump (bb5e472848cc7911 stays pinned; deleting stale older vendor dirs is optional
   housekeeping, guarded by the lock).
-- The generator side (`pk_knowledge_scripts/docs/*`) and the ledger/review shards
+- The generator side (`pharmacolib/docs/*`) and the ledger/review shards
   (plan-ledger-split, already implemented) — output markdown is unaffected here.
 - UI issues 2, 4, 5, 6–13 (sidebar weight, ARIA, search keyboard, theme/contrast).
 - `pk-db.js`'s data-path logic, query engines and the LLM runtime (their behavior is
