@@ -1,6 +1,6 @@
 {
- "git_commit": "2829f9ec782c4138bc6ec1a258535eb9c58de141",
- "git_tag": "v26.11-rc13",
+ "git_commit": "f3ed436591398afd0fa3e1f75701a01cdaa624c5",
+ "git_tag": "v26.11-rc15",
  "numbers": {
   "drugs": 1784,
   "drugs_with_record_rows": 2182,
@@ -62,6 +62,6 @@
   },
   "scope": "drugs"
  },
- "snapshot_date": "2026-11-25",
+ "snapshot_date": "2026-11-26",
  "version": "26.11"
 }
